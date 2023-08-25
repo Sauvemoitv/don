@@ -432,60 +432,28 @@ var ajax_sib_front_object = {"ajax_url":"https:\/\/www.adoredieu.com\/wp-admin\/
 
                                 <h3 class="flabel"><i class="fa fa-money"></i> Je choisis un montant</h3>
                                 <div class="btn_radio pricing">
-                                    <input type="radio" id="r7" name="amount" value="10">
-                                    <label for="r7">10 USD</label>
+                                    <input type="radio" id="r7" name="amount" value="">
+                                    <label for="r7">Ecrit le montant de votre choix, ici en bas</label>
                                 </div>
-                                <div class="btn_radio pricing">
-                                    <input type="radio" id="r5" name="amount" value="10" checked="">
-                                    <label class="default_label" for="r5" style="font-weight: bold;">10 USD</label>
-                                </div>
-                                <div class="btn_radio pricing">
-                                    <input type="radio" id="r8" name="amount" value="30">
-                                    <label for="r8">30 USD</label>
-                                </div>
-                                <div class="btn_radio pricing">
-                                    <input type="radio" id="r41" name="amount" value="50">
-                                    <label for="r41">50 USD</label>
-                                </div>
-                                <div class="btn_radio pricing">
-                                    <input type="radio" id="r3" name="amount" value="100">
-                                    <label for="r3">100 USD</label>
-                                </div>
-                                <div class="btn_radio pricing">
-                                    <input type="radio" id="r2" name="amount" value="500">
-                                    <label for="r2">500 USD</label>
-                                </div>
-                                <div class="btn_radio pricing">
-                                    <input type="radio" id="r1" name="amount" value="1000">
-                                    <label for="r1">1000 USD</label>
-                                </div>
-                                <div class="btn_radio pricing">
-                                    <input type="radio" id="r6" name="amount" value="">
-                                    <label for="r6">Autre</label>
-                                </div>
+                               
+                               
                                 <div class="clearfix"></div>
 
                                 <div class="input_montant">
                                     <input id="intmontant" type="text" name="intmontant" class="form-control" required="" data-msg-number="Cette valeur doit être numérique" data-msg-required="Ce champ est obligatoire">
                                     <select name="devise" id="devise">
+                                                                                <option value="FC">FC</option>
                                                                                 <option value="USD">USD</option>
                                                                                 <option value="EUR">EUR</option>
-                                                                                <option value="FC">FC</option>
                                                                                 <option value="CAD">CAD</option>
                                                                                 <option value="CHF">CHF</option>
                                                                                 <option value="GBP">GBP</option>
                                                                                 <option value="JPY">JPY</option>
                                                                             </select>
-                                    <input type="hidden" name="montant" value="10USD">
+                                    <input type="hidden" name="montant" value="true">
                                 </div>
 
-                                <div id="date-frequence-block" class="date-frequence mt30 hidden">
-                                    <h3 class="flabel"><i class="fa fa-calendar-check-o"></i> Je veux effectuer mon don le</h3>
-                                    <select id="date_frequence" name="date_frequence" class="form-control">
-                                        <option value="5 de chaque mois">5 de chaque mois</option>
-                                        <option selected="" value="12 de chaque mois">12 de chaque mois</option>
-                                        <option value="15 de chaque mois">15 de chaque mois</option>
-                                        <option value="25 de chaque mois">25 de chaque mois</option>
+                               
                                     </select>
 									<!--<select id="date_frequence_hidden" class="form-control">
                                         <option selected value="12 de chaque mois">12 de chaque mois</option>
@@ -542,7 +510,7 @@ var ajax_sib_front_object = {"ajax_url":"https:\/\/www.adoredieu.com\/wp-admin\/
                                     <div id="carte_bancaire" class="col-md-12 hidden">
                                         <p class="notice">
                                             <b>Comment ça marche ?</b>
-                                            Vous pouvez faire votre don par carte bancaire, le formulaire de paiement est sécurisé par le Crédit Mutuel.                                        </p>
+                                            Vous Allez faire votre don par carte bancaire, le formulaire de paiement est sécurisé par le Crédit Mutuel.                                        </p>
                                     </div>
                                    
                                     
@@ -554,7 +522,7 @@ var ajax_sib_front_object = {"ajax_url":"https:\/\/www.adoredieu.com\/wp-admin\/
                                     <div id="pa" class="col-md-12 ">
                                         <p class="notice">
                                             <b>Comment ça marche ?</b>
-                                            Vous aller envoyer directement votre argent, vers <span id="auto-frequence">M-pesa, Orange monnaie, etc... en RDC</span>.
+                                            Vous allez envoyer directement votre argent, vers <span id="auto-frequence">M-pesa, Orange monnaie, etc... aux numéro dessus, en RDC</span>.
                                         </p>
                                        
                                             
@@ -592,7 +560,7 @@ var ajax_sib_front_object = {"ajax_url":"https:\/\/www.adoredieu.com\/wp-admin\/
         </div> 
 
         <style>
-        	.cart { font-size: 25px; margin-bottom: 35px; text-transform: uppercase; }
+        	.cart { font-size: 25px; margin-bottom: 35px; text-transform: uppercase; margin-right: 20px}
             .boot_foot { background: #fff; padding-top: 40px; padding-bottom: 40px; text-align: center; }
             .list_logo, .boot_link { display: inline-block; vertical-align: middle; margin: 10px; }
             .list_logo .li_logo { display: inline-block; width: 66px; text-align: center; text-decoration: none; margin-right: 7px; border-radius: 3px; padding: 5px 7px; background: #eee;  }
@@ -614,9 +582,11 @@ var ajax_sib_front_object = {"ajax_url":"https:\/\/www.adoredieu.com\/wp-admin\/
                         <div class="col-md-4 col-xs-12">
                             <div class="block">
                                 <img src="./3000 visionnaires _ Adore Dieu_files/contribution.png" alt="icone">
-                                <h3>A propos de nous</h3>
-                                <p></p>
-<p></p>
+                                <h3>Devenir Partenaie</h3>
+                                <p1>💲💲💲 CONTRIBUER 💲💲💲</p1>
+<p>❤️ Pour soutenir notre communauté et nous aider à rejoindre un maximum de personnes partout dans le monde,<br> Devenez Partenaire de SMCE en faisant un Don</p>
+
+<p>- Nous utilisons les médias pour répondre au grand mandat<br> que le seigneur Jésus nous à donne dans Matthieu 28:19,<br> c'est ce que nous faisons chaque jour avec Passion.</p>
 <p></p>
 <p></p>
                             </div>
@@ -660,6 +630,9 @@ Rev’Impact<br>
 
     
             <style>
+            .block p1 {
+            text-align: center;
+            }
             .blc_partenaire { padding: 30px 0; background: #eee; }
             .title_bp h2 { font-size: 25px; margin-bottom: 35px; text-transform: uppercase; }
             .btn_bp .btn { padding: 15px 25px; }
